@@ -13,7 +13,11 @@ privileged:
   - SYS_MODULE
 panel_icon: mdi:television
 arch:
+  - aarch64
   - amd64
+  - armhf
+  - armv7
+  - i386
 host_network: true
 devices:
   - /dev/dvb/

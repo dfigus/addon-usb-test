@@ -5,19 +5,21 @@ FROM ${BUILD_FROM}
 RUN \
     apk update \
     && apk add --no-cache  \
-    git \
-    linux-headers \
-    linux-lts-dev \
-    build-base \
-    patchutils \
-    perl-proc-processtable \
+    git=2.43.0-r0 \
+    linux-headers=6.5-r0 \
+    linux-lts-dev=6.6.18-r0 \
+    build-base=0.5-r3 \
+    patchutils=0.4.2-r2 \
+    perl-proc-processtable=0.636-r1 \
     python3=3.11.8-r0 \
     py3-pip=23.3.1-r0 \
     && pip3 install \
     --no-cache-dir \
     --prefer-binary \
-    usb_resetter
+    usb_resetter==1.3.0
 
+# hadolint ignore=DL3003
+# hadolint ignore=DL3059
 RUN \
        git clone https://github.com/ljalves/media_build.git /tmp/media_build \
     && git clone --depth=1 https://github.com/ljalves/linux_media.git -b latest /tmp/media \
