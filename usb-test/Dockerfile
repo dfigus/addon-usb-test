@@ -18,8 +18,7 @@ RUN \
     --prefer-binary \
     usb_resetter==1.3.0
 
-# hadolint ignore=DL3003
-# hadolint ignore=DL3059
+# hadolint ignore=DL3003,DL3059
 RUN \
        git clone https://github.com/ljalves/media_build.git /tmp/media_build \
     && git clone --depth=1 https://github.com/ljalves/linux_media.git -b latest /tmp/media \
