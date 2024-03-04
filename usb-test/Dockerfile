@@ -5,6 +5,7 @@ FROM ${BUILD_FROM}
 RUN \
     apk update \
     && apk add --no-cache  \
+    alpine-sdk=1.0-r1 \
     git=2.43.0-r0 \
     linux-headers=6.5-r0 \
     linux-lts-dev=6.6.18-r0 \
