@@ -1,0 +1,7 @@
+---
+build_from:
+  aarch64: ghcr.io/dfigus/tvheadend/aarch64:5.1.1
+  amd64: ghcr.io/dfigus/tvheadend/amd64:5.1.1
+  armhf: ghcr.io/dfigus/tvheadend/armhf:5.1.1
+  armv7: ghcr.io/dfigus/tvheadend/armv7:5.1.1
+  i386: ghcr.io/dfigus/tvheadend/i386:5.1.1
