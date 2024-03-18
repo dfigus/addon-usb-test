@@ -5,7 +5,7 @@ FROM ${BUILD_FROM}
 RUN \
     apk update \
     && apk add --no-cache  \
-    usbutils \
+    usbutils=017-r0 \
     && pip3 install \
     --no-cache-dir \
     --prefer-binary \
