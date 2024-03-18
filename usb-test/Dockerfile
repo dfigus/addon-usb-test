@@ -6,6 +6,8 @@ RUN \
     apk update \
     && apk add --no-cache  \
     usbutils=017-r0 \
+    python3=3.11.8-r0 \
+    py3-pip=23.3.1-r0 \
     && pip3 install \
     --no-cache-dir \
     --prefer-binary \
